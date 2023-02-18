@@ -24,11 +24,14 @@
     }
 
     .clock {
-      padding-top: calc(50% - 50px);
-      width: 100vw;
       text-align: center;
       font-family: 'Poppins', serif;
       font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
     }
 
     .spin {
@@ -46,10 +49,15 @@
       background-repeat: no-repeat;
       transition: all linear 1s;
     }
+
+    .container {
+      position: relative;
+    }
   </style>
 </head>
 
 <body>
+  <div class="container"></div>
   <div class="spin" id="ball"></div>
   <div class="clock" id="clock">
     <div class="hour" id="hour">twelve</div>
