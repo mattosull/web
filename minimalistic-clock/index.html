@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist clock</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+    body {
+      background-color: #000;
+    }
+
+    .hour {
+      color: gray;
+      margin: 0 270px 0 0;
+      text-align: right;
+    }
+
+    .minute {
+      width: 500px;
+      color: white;
+      margin: -35px 0 0px 270px;
+      text-align: left;
+    }
+
+    .clock {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      margin: -100px 0 0 -300px;
+      color: white;
+      font-family: 'Poppins';
+      width: 600px;
+      height: 200px;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .spin {
+      border-radius: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -300px 0 0 -300px;
+      background-image: url('ball.png');
+      width: 600px;
+      height: 600px;
+      background-size: 600px;
+      background-repeat: no-repeat;
+      transition: all linear 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="spin" id="ball"></div>
+  <div class="clock" id="clock">
+    <div class="hour" id="hour">twelve</div>
+    <div class="minute" id="minute">twelve</div>
+  </div>
+</body>
+
+</html>
