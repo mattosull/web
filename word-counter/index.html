@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Word Counter</title>
+    <script>
+        function wordCount() {
+            var text = document.getElementById("text").value;
+
+            var count = 0;
+            var charcount = 0;
+            var parcount = 0;
+            var sencount = -1;
+
+            var split = text.split(' ')
+            var sensplit = text.split('.');
+            var parsplit = text.split(/\r?\n/);
+
+            for (var i = 0; i < split.length; i++) {
+                if (split[i] != "") {
+                    count += 1;
+                }
+            }
+
+            for (var i = 0; i < text.length; i++) {
+                charcount += 1;
+            }
+
+            for (var i = 0; i < parsplit.length; i++) {
+              if(charcount > 1){
+                parcount += 1;
+              }
+            }
+            
+            for (var i = 0; i < sensplit.length; i++) {
+                sencount += 1;
+            }
+            document.getElementById("charOutput").innerHTML = charcount;
+            document.getElementById("wordOutput").innerHTML = count;
+            document.getElementById("parOutput").innerHTML = parcount;
+            document.getElementById("senOutput").innerHTML = sencount;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #21212F;
+        }
+
+        .textBox {
+            background-color: white;
+            margin: 10%;
+            height: 300px;
+            width: 55%;
+            padding-top: 1%;
+            font-size: larger;
+            border-left: 0px;
+            border-right: 0px;
+            border-color: black;
+        }
+
+        .centerDiv {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .background {
+            margin: 5%;
+            width: 90%;
+            height: 90%;
+            background-color: white;
+        }
+        .info {
+            height: 50px;
+            font-size: x-large;
+            background-color: #FFFFFF;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+        .wc {
+            position: absolute;
+            top: 30%;
+            margin-left: 70%;
+            text-align: right;
+            margin-top: -5%;
+            margin-right: 3%
+        }
+        .wordOutput {
+            font-size: xxx-large;
+            color: #1AA7EC;
+            font-weight: 1000;
+        }
+        .charOutput {
+            font-size: xxx-large;
+            color: #1AA7EC;
+            font-weight: 1000;
+        }
+        .parOutput {
+            display:inline-block; 
+            position: relative;
+            font-size: xxx-large;
+            color: #1AA7EC;
+            font-weight: 1000;
+        }
+        .break {
+            position: relative;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centerDiv">
+        <div class="background">
+            <textarea class="textBox" id="text" oninput="wordCount()" placeholder="Enter Text Here"></textarea>
+            <div class="info">
+                <p class="wc">WORD COUNT: 
+                    <br>
+                    <span id="wordOutput" class="wordOutput">0</span>
+                    <br>
+                    _______________
+                    <br>
+                    <br>
+                    CHARACTER COUNT: 
+                    <br>
+                    <span id="charOutput" class="charOutput">0</span>
+                    <br>
+                    _______________
+                    <br>
+                    <br>
+                    PARAGRAPH COUNT: 
+                    <br>
+                    <span id="parOutput" class="parOutput">0</span>
+                    <br>
+                    _______________
+                    <br>
+                    <br>
+                    SENTENCE COUNT: 
+                    <br>
+                    <span id="senOutput" class="parOutput">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
