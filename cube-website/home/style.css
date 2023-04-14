@@ -1,0 +1,235 @@
+.gradient {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#FFACE0, #99DDFE);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Balsamiq Sans', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  }
+
+.socials {
+    text-align: center;
+    margin-top: 4rem;
+    position: relative;
+    background-color: white;
+    border-radius: 2rem;
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    position: absolute;
+    background-image: url(../imgs/profile.png);
+    border-radius: 100vw;
+    background-size: 90px;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90px;
+    width: 90px;
+    border: white 0.4rem solid;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+}
+
+.title {
+    margin-top: 3.6rem;
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin-bottom: -1rem;
+}
+
+.description {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.buttons {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: -10px;
+}
+.buttons td {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .buttons td:hover {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+.at {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.bisect-hosting {
+    text-align: center;
+    position: relative;
+    background-color: white;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.bisect-logo {
+    background-image: url(../imgs/bisect.png);
+    background-size: 115px;
+    width: 115px;
+    height: 115px;
+    float: left;
+  }
+
+  .bisect-text,
+.powered-by,
+.use-code {
+  margin-left: 130px;
+}
+.use-code {
+    font-size: 0.8rem
+}
+.powered-by {
+    font-size: 0.8rem;
+    margin-bottom: -1.2rem;
+    text-align: left;
+    color: #692997;
+}
+.bisect-text {
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+    text-align: left;
+    color: #22326C;
+    font-weight: 100;
+}
+
+.top {
+    font-size: 1rem;
+}
+
+.highlight {
+    color: #24A4CE;
+}
+
+.business-enquiries {
+    text-align: center;
+    position: relative;
+    background-color: white;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 400px;
+    min-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+    margin-bottom: -2rem;
+}
+
+.click {
+    color: #8F39CE;
+}
+
+.click:hover {
+    cursor: pointer;
+    color: #24A4CE;
+    text-decoration: underline;
+}
+
+.sidepanel-button {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: calc(100vw - 35px);
+    width: 25px;
+    height: 25px;
+    background-image: url(../imgs/sidepanel.png);
+    background-size: 25px;
+}
+
+.sidepanel-button:hover {
+    cursor: pointer;
+}
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .closebtn {
+    margin-right: -15px;
+    text-decoration: none;
+    color: #8F39CE;
+    z-index: 5;
+  }
+
+  .closebtn:hover {
+    color: #61109a
+  }
+
+  /* Animation */
+  .sidepanel.animate {
+    width: 300px;
+  }
+  
+  .sidepanel.animate .openbtn {
+    display: none;
+  }
+
+  .list {
+    margin-left: 20px;
+  }
+
+  .pattern {
+    position: absolute;
+    background-image: url(../imgs/pattern.png);
+    background-repeat: no-repeat;
+    background-position: bottom middle;
+    top: 0;
+    left: -15vh;
+    height: 100vh;
+    width: 90vh;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .list:hover {
+    cursor: pointer;
+  }
