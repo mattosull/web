@@ -145,10 +145,15 @@
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+    width: 5rem;
   }
 
   .info h1 {
     font-size: 25px;
+  }
+
+  .info p {
+    margin-top: -1rem;
   }
 
   .combined-total {
@@ -197,4 +202,26 @@
     text-decoration: underline;
   }
 
-  
+  .tiktok h1{
+    color: #E4A6FA;
+  }
+
+  .youtube h1{
+    color: #FAA6B5;
+  }
+
+  .twitter h1{
+    color: #A6E1FA;
+  }
+
+  .instagram h1{
+    color: #FACEA6;
+  }
+
+  .discord h1{
+    color: #A6B3FA;
+  }
+
+  .twitch h1{
+    color: #A6FABE;
+  }
