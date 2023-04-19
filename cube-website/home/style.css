@@ -96,6 +96,7 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
     overflow: hidden;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .bisect-logo {
@@ -204,7 +205,6 @@
     color: #61109a
   }
 
-  /* Animation */
   .sidepanel.animate {
     width: 300px;
   }
@@ -232,4 +232,33 @@
 
   .list:hover {
     cursor: pointer;
+  }
+
+  @media (min-width: 1024px){
+    .socials, .bisect-hosting, .business-enquiries {
+      max-width: 625px;
+    }
+
+    .buttons {
+      width: 60%;
+    }
+
+    .title {
+      margin-top: 4rem;
+    }
+
+    .bisect-text {
+      text-align: center;
+    }
+
+    .powered-by {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .bisect-logo {
+      width: 130px;
+      height: 130px;
+      background-size: 130px;
+    }
   }

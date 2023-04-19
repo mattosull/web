@@ -73,7 +73,6 @@
     color: #61109a
   }
 
-  /* Animation */
   .sidepanel.animate {
     width: 300px;
   }
@@ -183,8 +182,6 @@
     font-weight: bold;
   }
 
-
-
   .combined-total p {
     margin-bottom: -1.8rem;
     color: white;
@@ -224,4 +221,13 @@
 
   .twitch h1{
     color: #A6FABE;
+  }
+
+  @media (min-width: 1024px){
+    .info{
+      max-width: 660px;
+    }
+    .combined-total, .email {
+      max-width: 625px;
+    }
   }
